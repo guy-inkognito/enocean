@@ -1540,6 +1540,53 @@
         </data>
       </profile>
     </profiles>
+    <profiles func="0x3f" description="TEST">
+      <profile type="0x7f" description="ULFBERT">
+        <data>
+          <value shortcut="MSB" description="Laufzeit in 100ms MSB" offset="0" size="8" unit="100ms">
+            <range>
+              <min>0</min>
+              <max>255</max>
+            </range>
+            <scale>
+              <min>0</min>
+              <max>255</max>
+            </scale>
+          </value>
+          <value shortcut="LSB" description="Laufzeit in 100ms LSB" offset="8" size="8" unit="100ms">
+            <range>
+              <min>0</min>
+              <max>255</max>
+            </range>
+            <scale>
+              <min>0</min>
+              <max>255</max>
+            </scale>
+          </value>
+          <enum shortcut="KOM" description="Kommando" offset="16" size="8">
+            <item description="Stop" value="0" />
+            <item description="Auf" value="1" />
+            <item description="Ab" value="2" />
+          </enum>
+          <enum shortcut="LRN" description="LRN Button" offset="24" size="1">
+            <item description="Lerntelegramm" value="0" />
+            <item description="Datentelegramm" value="1" />
+          </enum>
+          <enum shortcut="BLC" description="Taster blockieren" offset="25" size="1">
+            <item description="Freigeben" value="0" />
+            <item description="Blockieren" value="1" />
+          </enum>
+          <enum shortcut="SWI" description="Umschalten Laufzeit" offset="26" size="1">
+            <item description="Sekunden in DB2" value="0" />
+            <item description="100ms ueberall" value="1" />
+          </enum>
+          <enum shortcut="LRB" description="End position" offset="27" size="1">
+            <item description="nuescht" value="0" />
+            <item description="aktivierenOdLoeschen" value="1" />
+          </enum>
+        </data>
+      </profile>
+    </profiles>
   </telegram>
   <telegram rorg="0xD2" type="VLD" description="VLD Telegram">
     <profiles func="0x01" description="Electronic switches and dimmers with Energy Measurement and Local Control">
